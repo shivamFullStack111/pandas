@@ -1,0 +1,4 @@
+NaN (not an number)
+None (for an object)
+
+isnull()       This function retun True were null value exist and False were null value does'nt exist 

@@ -8,6 +8,12 @@ print(filterData)
 
 print('\n')
 
-# Multiple conditions 
+# Multiple conditions with and operator
 filterData2 = df[(df['fixed acidity']>7) & (df['fixed acidity']<8) ]   # this list all rows which "fixed acidity" greater then 7 and less then 8
 print(filterData2)
+
+# Multiple conditions with or operator
+filterData3= df[(df['fixed acidity']>7) | (df['fixed acidity']<8) ]   # this list all rows which "fixed acidity" greater then 7 or less then 8
+print(filterData3)
+
+

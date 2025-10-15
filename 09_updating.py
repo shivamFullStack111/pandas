@@ -12,7 +12,7 @@ df = pd.DataFrame(data)
 
 # Updating using loc property------------------------------------------------------------
 
-updatedData = df.loc[1,"company"]="TCS"                            # 1 is row index and company is column name 
+updatedData = df.loc[1,"company"]="TCS"                            # 1 is row index and "company" is column name 
 print(df)
 print("\n")
 

@@ -8,6 +8,6 @@ data={
 
 df = pd.DataFrame(data)
 
-# Filling data with linear mathematical method that fill data in sequence manner like 10 20 30 NaN 50 NaN replace with 50
+# Filling data with linear mathematical method that fill data in sequence manner like 10 20 30 NaN 50, then will NaN replace with 50
 df["salary"].interpolate("linear",inplace=True)
 print(df)

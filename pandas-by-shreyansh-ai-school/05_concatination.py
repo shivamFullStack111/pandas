@@ -17,6 +17,6 @@ print(
     "\n"
 )
 print(
-    pd.concat([df1,df2],axis=1),  # Concatinating in columns 
+    pd.concat([df1,df2],axis=1),  # Concatinating in columns this will create extra columns (duplicate columns name) 
     "\n"
 )

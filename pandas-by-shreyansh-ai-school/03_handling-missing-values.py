@@ -22,7 +22,7 @@ df = pd.DataFrame(data)
 print("FINDING NULL VALUES ------------------------------------------------")
  
 print(df.isna())                 # Finding in whole DataFrame
-print(df["age"].isna())          # Finding in particular DataFrame
+print(df["age"].isna())          # Finding in particular column
 print(df.isna().sum())           # print(df.isna().sum())   # This returns a Series showing the total number of null (NaN) values in each column
 print(df.isna().any())           # This returns True in which column null value exist and False in which column null value does'nt exist
 print("\n")
@@ -45,7 +45,7 @@ print(
     df.dropna(axis=1)              # Removing all columns in which null values exist 
 )
 print(
-    df.dropna(thresh=4)            # thresh=4 this remove all rows except in which row atleast 4 non null value exist EX. we have 6 cols if row contain null values in more then 2 cols that row will remove 
+    df.dropna(thresh=4)            # thresh=4 this remove all rows except that row in which atleast 4 non null value exist EX. we have 6 cols if row contain null values in more then 2 cols that row will remove 
 )
 print("\n")
 
